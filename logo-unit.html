@@ -1,0 +1,47 @@
+<!-- logo-unit.html -->
+<!-- このファイルは、qunowaのロゴとタグラインのセットを再利用するためのものです。 -->
+<!-- 使用するHTMLファイルの<head>セクションで、Noto Serif JPフォントを読み込む必要があります。 -->
+
+<div class="main-visual-logo-unit">
+    <img src="images/qunowa logo.svg" alt="qunowaロゴ" class="main-visual-logo">
+    <p class="main-visual-kana">くのわ</p>
+    <p class="main-visual-en">qunowa</p>
+    <p class="main-visual-tagline">qutte. nonde. waratte.</p>
+</div>
+
+<style>
+    /* main-visual-logo-unit のスタイル */
+    .main-visual-logo-unit {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 中央揃え */
+        margin-bottom: 1rem; /* 必要に応じて調整 */
+    }
+
+    .main-visual-logo {
+        width: 150px; /* ロゴの幅を調整 */
+        height: auto;
+        margin-bottom: 0; /* 間隔を可能な限り狭める */
+        filter: drop-shadow(0 0 5px rgba(0,0,0,0.5)); /* 影をつけて視認性向上 */
+    }
+
+    .main-visual-kana {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .main-visual-en {
+        font-family: 'Noto Serif JP', serif; /* 洗練された書体 */
+        font-size: 1.8rem; /* 2割大きく */
+        letter-spacing: 0.15em; /* 現在の文字間隔の1.5倍 */
+        margin: 0; /* 間隔を可能な限り狭める */
+    }
+
+    .main-visual-tagline {
+        font-size: 0.72rem; /* 60%に縮小 */
+        letter-spacing: 0.15em; /* 現在の文字間隔の1.5倍 */
+        margin: 0; /* 間隔を可能な限り狭める */
+        opacity: 0.9;
+    }
+</style>

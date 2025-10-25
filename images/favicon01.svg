@@ -1,0 +1,34 @@
+<svg width="148" height="148" viewBox="26 1 148 148" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Content from rainbow_gradient.svg's defs -->
+    <linearGradient id="rainbowGradient" x1="46" y1="21" x2="154" y2="129" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF0000" />
+      <stop offset="16.67%" stop-color="#FF7F00" />
+      <stop offset="33.33%" stop-color="#FFFF00" />
+      <stop offset="50%" stop-color="#00FF00" />
+      <stop offset="66.67%" stop-color="#0000FF" />
+      <stop offset="83.33%" stop-color="#4B0082" />
+      <stop offset="100%" stop-color="#8B00FF" />
+    </linearGradient>
+
+    <!-- Content from kuyomon_originalのコピー.svg's defs -->
+    <mask id="holeMask">
+      <rect x="26" y="1" width="148" height="148" fill="white" />
+      <circle cx="100" cy="75" r="21" fill="black" />
+      <circle cx="140" cy="75" r="14" fill="black" />
+      <circle cx="128.28" cy="103.28" r="14" fill="black" />
+      <circle cx="100" cy="115" r="14" fill="black" />
+      <circle cx="71.72" cy="103.28" r="14" fill="black" />
+      <circle cx="60" cy="75" r="14" fill="black" />
+      <circle cx="71.72" cy="46.72" r="14" fill="black" />
+      <circle cx="100" cy="35" r="14" fill="black" />
+      <circle cx="128.28" cy="46.72" r="14" fill="black" />
+    </mask>
+  </defs>
+
+  <!-- Bottom layer (rainbow gradient) -->
+  <rect x="26" y="1" width="148" height="148" fill="url(#rainbowGradient)" />
+
+  <!-- Top layer (masked Kuyomon) -->
+  <rect x="26" y="1" width="148" height="148" fill="black" mask="url(#holeMask)" />
+</svg>

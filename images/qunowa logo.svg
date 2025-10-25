@@ -1,0 +1,16 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .star_fill { fill: white; stroke: none; } 
+  </style>
+  <!-- 中央の円 -->
+  <circle class="star_fill" cx="50" cy="50" r="20.0" stroke-width="0" />
+  <!-- 周囲の円 -->
+  <circle class="star_fill" cx="85.00" cy="50.00" r="13.0" stroke-width="0" />
+  <circle class="star_fill" cx="74.75" cy="74.75" r="13.0" stroke-width="0" />
+  <circle class="star_fill" cx="50.00" cy="85.00" r="13.0" stroke-width="0" />
+  <circle class="star_fill" cx="25.25" cy="74.75" r="13.0" stroke-width="0" />
+  <circle class="star_fill" cx="15.00" cy="50.00" r="13.0" stroke-width="0" />
+  <circle class="star_fill" cx="25.25" cy="25.25" r="13.0" stroke-width="0" />
+  <circle class="star_fill" cx="50.00" cy="15.00" r="13.0" stroke-width="0" />
+  <circle class="star_fill" cx="74.75" cy="25.25" r="13.0" stroke-width="0" />
+</svg>
