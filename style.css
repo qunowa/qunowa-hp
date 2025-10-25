@@ -579,9 +579,17 @@ main section {
 }
 
 .sns-promo-block .social-button {
-    margin-top: 0;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    font-size: 3rem; /* アイコンのサイズを大きく */
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    color: var(--primary-color);
+    background: none;
+}
+
+.sns-promo-block .social-button:hover {
+    opacity: 0.8;
 }
 
 /* コンセプト紹介 */
