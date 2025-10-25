@@ -163,7 +163,7 @@ main section {
 
 .info-item {
     background-color: var(--white-color);
-    padding: 2rem;
+    padding: 2rem; /* 元のパディングに戻す */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
@@ -177,22 +177,22 @@ main section {
 }
 
 .social-button, .map-link {
-    display: inline-flex; /* アイコンを中央揃えにするために flex に変更 */
-    justify-content: center;
-    align-items: center;
-    width: 60px; /* さらにサイズを大きく */
-    height: 60px;
+    display: inline-block;
     margin-top: 1rem;
     color: var(--primary-color);
     text-decoration: none;
-    font-size: 2.5rem; /* アイコンのサイズをさらに大きく */
-    border: none; /* 枠線を削除 */
-    border-radius: 8px; /* 角丸四角形にする */
+    font-weight: 700;
+    padding: 0.5rem 0.8rem; /* パディングを調整 */
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
     transition: all 0.3s ease;
+    max-width: 100%; /* 親要素の幅に収める */
+    box-sizing: border-box; /* paddingとborderをwidthに含める */
 }
 
 .social-button:hover, .map-link:hover {
-    opacity: 0.8; /* ホバー時のエフェクトを変更 */
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .social-icon-svg {
