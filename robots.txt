@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qunowa.github.io/qunowa-hp/sitemap.xml
