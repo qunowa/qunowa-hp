@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://qunowa.github.io/qunowa-hp/top.html</loc><lastmod>2025-10-31</lastmod></url>
+  <url><loc>https://qunowa.github.io/qunowa-hp/news.html</loc><lastmod>2025-10-31</lastmod></url>
+  <url><loc>https://qunowa.github.io/qunowa-hp/concept.html</loc><lastmod>2025-10-31</lastmod></url>
+  <url><loc>https://qunowa.github.io/qunowa-hp/menu.html</loc><lastmod>2025-10-31</lastmod></url>
+  <url><loc>https://qunowa.github.io/qunowa-hp/access.html</loc><lastmod>2025-10-31</lastmod></url>
+  <url><loc>https://qunowa.github.io/qunowa-hp/reservation.html</loc><lastmod>2025-10-31</lastmod></url>
+  <url><loc>https://qunowa.github.io/qunowa-hp/privacy-policy.html</loc><lastmod>2025-10-31</lastmod></url>
+  <url><loc>https://qunowa.github.io/qunowa-hp/sitemap.html</loc><lastmod>2025-10-31</lastmod></url>
+</urlset>
