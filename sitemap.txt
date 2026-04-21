@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://qunowa.github.io/qunowa-hp/top.html</loc><lastmod>2025-10-31</lastmod></url>
+  <url><loc>https://qunowa.github.io/qunowa-hp/index.html</loc><lastmod>2025-10-31</lastmod></url>
   <url><loc>https://qunowa.github.io/qunowa-hp/news.html</loc><lastmod>2025-10-31</lastmod></url>
   <url><loc>https://qunowa.github.io/qunowa-hp/news-details/news-detail-grandopen.html</loc><lastmod>2026-04-20</lastmod></url>
   <url><loc>https://qunowa.github.io/qunowa-hp/news-details/news-detail-instagram.html</loc><lastmod>2026-04-20</lastmod></url>
