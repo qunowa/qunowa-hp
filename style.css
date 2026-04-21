@@ -13,6 +13,19 @@ body {
     background-color: var(--secondary-color);
     color: var(--text-color);
     line-height: 1.8;
+    font-feature-settings: "palt"; /* 日本語の文字間隔を調整 */
+}
+
+.is-inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-width: 767px) {
+    /* スマホサイズでは見出しやキャッチコピーを左揃えにするための共通クラス（必要に応じて各セクションに適用） */
+    .responsive-align {
+        text-align: left !important;
+    }
 }
 
 .container {
@@ -23,64 +36,14 @@ body {
 
 h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     margin-bottom: 2rem;
 }
 
-/* --- ヘッダー & ヒーローセクション --- */
-.hero {
-    background-color: var(--primary-color);
-    /* 仮の背景画像。後で差し替え */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/haikei02.jpg');
-    background-size: cover;
-    background-position: center;
-    color: var(--white-color);
-    text-align: center;
-    padding: 6rem 20px 4rem;
-}
-
-.hero-content .logo {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin: 0;
-    letter-spacing: 2px;
-}
-
-.hero-content .logo-kana {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 1.8rem; /* ロゴの約1.5倍 */
-    margin-top: 0.5rem;
-    color: var(--white-color);
-    opacity: 0.9;
-}
-
-.faded-text {
-    opacity: 0.5;
-}
-
-.hero-content .tagline {
-    font-size: 1.2rem;
-    margin: 0.5rem 0 0 0;
-    opacity: 0.9;
-}
-
-.hero-content .catch-copy {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-top: 2rem;
-}
-
-.open-info {
-    margin-top: 2rem;
-    font-size: 1.1rem;
-}
-
-.open-info .highlight {
-    font-weight: 700;
-    color: var(--white-color);
-    background-color: var(--highlight-color);
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
+.is-inline {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
 }
 
 .open-announcement {
@@ -88,11 +51,17 @@ h2 {
 }
 
 .open-message {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 3vw, 1.3rem);
     line-height: 1.8;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     text-align: center;
+}
+
+.open-date {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+    font-weight: 700;
+    opacity: 0.9;
 }
 
 .text-unit {
