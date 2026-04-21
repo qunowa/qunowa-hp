@@ -1,0 +1,16 @@
+{
+  "name": "qunowa (くのわ)",
+  "short_name": "qunowa",
+  "description": "辻堂の食堂＆酒場 qunowa (くのわ)",
+  "start_url": "/qunowa-hp/index.html",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#6d4c41",
+  "icons": [
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
