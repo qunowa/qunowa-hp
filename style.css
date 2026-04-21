@@ -40,6 +40,48 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/* --- ヘッダー & ヒーローセクション --- */
+.hero {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/haikei02.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    text-align: center;
+    padding: clamp(4rem, 10vw, 6rem) 20px clamp(3rem, 8vw, 4rem);
+}
+
+.hero-content .logo {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.hero-content .logo-kana {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    margin-top: 0.5rem;
+    color: var(--white-color);
+    opacity: 0.9;
+}
+
+.faded-text {
+    opacity: 0.5;
+}
+
+.hero-content .tagline {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+}
+
+.hero-content .catch-copy {
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
 .is-inline {
     display: inline-block;
     vertical-align: top;
