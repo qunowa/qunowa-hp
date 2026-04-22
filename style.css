@@ -159,12 +159,30 @@ main section {
 .concept {
     background-color: var(--white-color);
     text-align: center;
+    padding: clamp(3rem, 10vw, 5rem) 0;
+}
+
+.concept-message-unit {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px; /* スマホでの左右のゆとり */
+}
+
+.concept-message-unit p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.concept-message-unit .is-inline {
+    text-align: center; /* 中央揃えの文脈ではユニット内も中央寄せ */
 }
 
 .text-link {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 700;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 .info {
