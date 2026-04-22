@@ -92,6 +92,11 @@ h2 {
     line-height: 1.8;
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.open-message .is-inline {
+    text-align: center; /* ヒーロー内はスマホでも中央寄せ */
 }
 
 .open-date {
