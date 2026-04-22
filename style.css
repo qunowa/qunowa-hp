@@ -42,21 +42,18 @@ h2 {
 
 /* --- ヘッダー & ヒーローセクション --- */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* 画面いっぱいに表示 */
     background-color: var(--primary-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/haikei02.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white-color);
     text-align: center;
-    padding: 20px;
+    /* 上下の余白を画面高さに合わせて調整し、チラ見せ効果を作る */
+    padding: clamp(6rem, 15vh, 12rem) 20px clamp(4rem, 10vh, 8rem);
 }
 
 .hero-content {
-    width: 100%;
+    margin: 0 auto;
     max-width: 800px;
 }
 
