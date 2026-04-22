@@ -42,78 +42,63 @@ h2 {
 
 /* --- ヘッダー & ヒーローセクション --- */
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* 画面いっぱいに表示 */
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/haikei02.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/haikei02.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white-color);
     text-align: center;
-    padding: clamp(4rem, 10vw, 6rem) 20px clamp(3rem, 8vw, 4rem);
+    padding: 20px;
 }
 
-.hero-content .logo {
-    font-size: clamp(2.5rem, 8vw, 3.5rem);
-    font-weight: 700;
-    margin: 0;
-    letter-spacing: 2px;
+.hero-content {
+    width: 100%;
+    max-width: 800px;
 }
 
-.hero-content .logo-kana {
+.main-visual-logo {
+    width: clamp(120px, 20vw, 180px);
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.main-visual-kana {
     font-family: 'Noto Serif JP', serif;
-    font-size: clamp(1.4rem, 4vw, 1.8rem);
-    margin-top: 0.5rem;
-    color: var(--white-color);
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin: 0;
+}
+
+.main-visual-en {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    letter-spacing: 0.15em;
+    margin: 0;
+}
+
+.main-visual-tagline {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    letter-spacing: 0.15em;
+    margin: 0;
     opacity: 0.9;
-}
-
-.faded-text {
-    opacity: 0.5;
-}
-
-.hero-content .tagline {
-    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-    margin: 0.5rem 0 0 0;
-    opacity: 0.9;
-}
-
-.hero-content .catch-copy {
-    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
-    font-weight: 700;
-    margin-top: 2rem;
-}
-
-.is-inline {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
 }
 
 .open-announcement {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .open-message {
-    font-size: clamp(1rem, 3vw, 1.3rem);
+    font-size: clamp(1rem, 3.5vw, 1.4rem);
     line-height: 1.8;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .open-date {
-    font-size: clamp(1.1rem, 4vw, 1.5rem);
-    font-weight: 700;
-    opacity: 0.9;
-}
-
-.text-unit {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left; /* ユニット内は左寄せ（中央揃えの親要素内でのバランスのため） */
-}
-
-.open-date {
-    font-size: 1.3rem;
+    font-size: clamp(1.2rem, 4.5vw, 1.8rem);
     font-weight: 700;
     opacity: 0.9;
 }
