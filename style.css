@@ -473,6 +473,7 @@ main section {
 .main-visual-logo {
     width: 150px; /* ロゴの幅を調整 */
     height: auto;
+    aspect-ratio: auto 150 / 80; /* 仮のアスペクト比。SVGなのでautoでも良いが、プレースホルダーとして機能させる */
     margin-bottom: 0; /* 間隔を可能な限り狭める */
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.5)); /* 影をつけて視認性向上 */
 }
@@ -582,10 +583,17 @@ main section {
 .concept-intro-image img,
 .access-intro-image img {
     width: 100%;
-    height: 300px; /* 高さを固定 */
+    aspect-ratio: 16 / 9; /* 基本のアスペクト比 */
     object-fit: cover;
     display: block;
     border-radius: 0; /* 角丸をなくす */
+}
+
+@media (min-width: 768px) {
+    .concept-intro-image img,
+    .access-intro-image img {
+        aspect-ratio: 21 / 9; /* PCではよりパノラマに（高さを抑える） */
+    }
 }
 
 .news-section-bottom-image {
@@ -597,10 +605,16 @@ main section {
 
 .news-section-bottom-image img {
     width: 100%;
-    height: 300px; /* 高さを固定 */
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     display: block;
     border-radius: 0; /* 角丸をなくす */
+}
+
+@media (min-width: 768px) {
+    .news-section-bottom-image img {
+        aspect-ratio: 21 / 9;
+    }
 }
 
 /* コンセプト紹介 */
@@ -703,7 +717,7 @@ main section {
 
 .menu-item .layout-image img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 3 / 2; /* アスペクト比を固定 */
     border-radius: 8px;
     object-fit: cover;
 }
@@ -875,7 +889,7 @@ main section {
 
 .menu-item-full-with-image .menu-item-image img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 3 / 2;
     border-radius: 4px;
     object-fit: cover;
 }
@@ -989,7 +1003,7 @@ main section {
 
 .concept-detail-box .layout-image img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 3 / 2;
     border-radius: 8px;
     object-fit: cover;
 }
