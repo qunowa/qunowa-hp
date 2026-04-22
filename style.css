@@ -48,8 +48,8 @@ h2 {
     background-position: center;
     color: var(--white-color);
     text-align: center;
-    /* 上下の余白を画面高さに合わせて調整し、チラ見せ効果を作る */
-    padding: clamp(6rem, 15vh, 12rem) 20px clamp(4rem, 10vh, 8rem);
+    /* さらに上下を詰め、次セクションの見出しが見えるように調整 */
+    padding: clamp(4rem, 12vh, 10rem) 20px clamp(3rem, 8vh, 7rem);
 }
 
 .hero-content {
