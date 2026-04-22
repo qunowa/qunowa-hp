@@ -61,44 +61,44 @@ h2 {
 }
 
 .main-visual-logo {
-    width: clamp(120px, 20vw, 180px);
+    width: clamp(140px, 25vw, 260px); /* 最大値を大きく */
     height: auto;
     margin-bottom: 0.5rem;
 }
 
 .main-visual-kana {
     font-family: 'Noto Serif JP', serif;
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-size: clamp(2rem, 7vw, 3.5rem); /* 最大値を大きく */
     margin: 0;
 }
 
 .main-visual-en {
     font-family: 'Noto Serif JP', serif;
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(1.6rem, 5vw, 2.8rem); /* 最大値を大きく */
     letter-spacing: 0.15em;
     margin: 0;
 }
 
 .main-visual-tagline {
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    font-size: clamp(0.75rem, 2vw, 1rem); /* 少し大きく */
     letter-spacing: 0.15em;
     margin: 0;
     opacity: 0.9;
 }
 
 .open-announcement {
-    margin-top: 3rem;
+    margin-top: clamp(2rem, 5vh, 4rem); /* 余白もレスポンシブに */
 }
 
 .open-message {
-    font-size: clamp(1rem, 3.5vw, 1.4rem);
+    font-size: clamp(1.1rem, 3.5vw, 1.7rem); /* 最大値を大きく */
     line-height: 1.8;
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .open-date {
-    font-size: clamp(1.2rem, 4.5vw, 1.8rem);
+    font-size: clamp(1.3rem, 5vw, 2.2rem); /* 最大値を大きく */
     font-weight: 700;
     opacity: 0.9;
 }
