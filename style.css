@@ -48,8 +48,8 @@ h2 {
     background-position: center;
     color: var(--white-color);
     text-align: center;
-    /* 大胆に高さを削り、次セクションを確実に露出させる */
-    padding: clamp(2rem, 8vh, 6rem) 20px clamp(1.5rem, 4vh, 4rem);
+    /* 極限まで高さを削り、次セクションの露出を最大化 */
+    padding: clamp(1rem, 5vh, 4rem) 20px clamp(1rem, 2vh, 2rem);
 }
 
 .hero-content {
